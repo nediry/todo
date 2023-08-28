@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1ad613, #ce6a0c);
+    align-items: center;
+}
+
+header {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 7px 0;
+}
+
+.container {
+    padding-bottom: 20px;
+    margin-top: 10px;
+    width: 450px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(4);
+    -webkit-backdrop-filter: blur(4);
+    background: rgba(25, 25, 25, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 4px #2a2a2a;;
+}
+
+.add-todo {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #000;
+    background: rgba(75, 75, 75, 0.4);
+    border-radius: 7px;
+    outline: none;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transform: 0.5s;
+}
+
+.input-box input:focus + span,
+.input-box input:valid ~ span {
+    transform: translate(8px, -13px);
+    font-size: 0.80em;
+    padding: 0 10px;
+    background: none;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.add-button {
+    position: relative;
+    left: 40%;
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid #000;
+}
+
+.todo {
+    width: 100%;
+    padding: 5px 15px;
+    justify-content: center;
+}
+
+.todo input {
+    font-size: 0.95em;
+    text-transform: uppercase;
+    padding: 7px;
+    border: 1px solid #000;
+}
+
+.title {
+    background: rgba(75, 75, 75, 0.4);
+    border-radius: 7px;
+    width: 340px;
+    margin-top: 10px;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+.description {
+    background: rgba(125, 125, 125, 0.4);
+    border-radius: 0 0 7px 7px;
+    width: 325px;
+    margin-left: 13.5px;
+}
+
+.todo i {
+    margin-top: 18px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
