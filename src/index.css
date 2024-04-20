@@ -21,7 +21,7 @@ header {
 
 .container {
     padding-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 50px;
     width: 450px;
     align-items: center;
     display: flex;
@@ -67,7 +67,7 @@ header {
 
 .input-box input:focus + span,
 .input-box input:valid ~ span {
-    transform: translate(8px, -13px);
+    transform: translate(-6px, -19px);
     font-size: 0.80em;
     padding: 0 10px;
     background: none;
